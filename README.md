@@ -1,2 +1,2 @@
 # CódigosEmPython
-Atividades básicas que eu realizei cursando Análise e Desenvolvimento de Sistemas
+Atividades básicas que eu realizei em Python cursando Análise e Desenvolvimento de Sistemas.
