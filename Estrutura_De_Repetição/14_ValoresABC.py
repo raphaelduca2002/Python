@@ -9,11 +9,11 @@ operacoes = 5
 for i in range(1, operacoes + 1):
     print(f"Operação: {i}/5")
     try:
-        A = float(input("Informe um numero inteiro: "))
+        A = float(input("Informe um número: "))
 
-        B = float(input("Informe um numero inteiro: "))
+        B = float(input("Informe um número: "))
 
-        C = float("Informe um caractere aritmético: ")
+        C = input("Informe um caractere aritmético: ")
     except ValueError:
         print("Tente novamente.")
         continue
@@ -28,7 +28,7 @@ for i in range(1, operacoes + 1):
         case "*":
             numero = A * B
             print(f"o Resultado da multiplicação é: {numero} ({A} * {B})")
-        case "/": 
+        case "/":
             try:
                 numero = A // B
                 print(f"o Resultado da divisão é: {numero} ({A} / {B})") 
