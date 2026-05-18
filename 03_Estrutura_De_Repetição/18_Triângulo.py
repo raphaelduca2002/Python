@@ -13,7 +13,7 @@ print("-" * 10 + "VERIFICAÇÃO DE TRIÂNGULOS" + "-" * 10)
 for n in range(1, operacoes + 1):
     print(f"Triângulo {n}/5: ")
 
-    # Entrada de dados:
+    # Entrada de dados de números inteiros:
 
     lado1 = int(input("Informe o comprimento do lado 1: CM "))
     lado2 = int(input("Informe o comprimento do lado 2: CM "))
