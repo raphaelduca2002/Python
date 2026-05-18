@@ -3,6 +3,7 @@ pede-se para imprimir o resultado da operação de A por B se C for um símbolo 
 caso contrário deve ser impressa uma mensagem de operador não definido.
 Tratar erro de divisão por zero. Repita esse processo cinco vezes."""
 
+print("Valores A, B e C")
 
 operacoes = 5
 
