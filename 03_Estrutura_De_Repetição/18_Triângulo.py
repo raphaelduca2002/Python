@@ -15,9 +15,9 @@ for n in range(1, operacoes + 1):
 
     # Entrada de dados:
 
-    lado1 = float(input("Informe o comprimento do lado 1: CM "))
-    lado2 = float(input("Informe o comprimento do lado 2: CM "))
-    lado3 = float(input("Informe o comprimento do lado 3: CM "))
+    lado1 = int(input("Informe o comprimento do lado 1: CM "))
+    lado2 = int(input("Informe o comprimento do lado 2: CM "))
+    lado3 = int(input("Informe o comprimento do lado 3: CM "))
 
     # Verificar se os comprimentos informados podem formar um triângulo:
 
