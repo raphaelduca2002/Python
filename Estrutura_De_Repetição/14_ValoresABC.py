@@ -9,11 +9,11 @@ operacoes = 5
 for i in range(1, operacoes + 1):
     print(f"Operação: {i}/5")
     try:
-        A = int(input("Informe um numero inteiro: "))
+        A = float(input("Informe um numero inteiro: "))
 
-        B = int(input("Informe um numero inteiro: "))
+        B = float(input("Informe um numero inteiro: "))
 
-        C = input("Informe um caractere aritmético: ")
+        C = float("Informe um caractere aritmético: ")
     except ValueError:
         print("Tente novamente.")
         continue
@@ -28,10 +28,10 @@ for i in range(1, operacoes + 1):
         case "*":
             numero = A * B
             print(f"o Resultado da multiplicação é: {numero} ({A} * {B})")
-        case "/": # Como transformar as variáveis A e B em float?
+        case "/":
             try:
                 numero = A // B
-                print(f"o Resultado da divisão é: {numero} ({A} / {B})") # Como imprimir o maior valor no resultado?
+                print(f"o Resultado da divisão é: {numero} ({A} / {B})") 
             except ZeroDivisionError:
                 print("Não é possível dividir por zero, tente novamente.")
         case _:
