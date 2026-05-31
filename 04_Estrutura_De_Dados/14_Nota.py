@@ -16,11 +16,12 @@ while continuar == "S":
     alunos.append(nome.upper())
     notas.append(nota)
 
-    opcao = input("Deseja continuar? [S/N]: ")
+    opcao = input("Deseja continuar cadastrando alunos e notas? [S/N]: ")
     while opcao.upper() != "S" and opcao.upper() != "N":
-        opcao = input("Valores incorretos, informe S para continuar ou N para encerrar: ")
+        opcao = input("Valores incorretos, informe S para continuar cadastrando alunos e notas ou N para encerrar: ")
     if opcao.upper() == "N":
         break
+
 print("-" * 30)
 print("Alunos cadastrados")
 print(alunos)
@@ -33,10 +34,22 @@ while True:
         print("-" * 30)
         print(f"Nome: {alunos[indice]} | Nota: {notas[indice]}")
         print("-" * 30)
-    else:
-        print("-" * 30)
-        print("Aluno não cadastrado")
+    elif buscar == "":
         print("-" * 45)
+        print("Os dados informados não podem ser vazios, tente novamente.")
+        print("-" * 45)
+    else:
+        print("-" * 45)
+        print("Aluno não cadastrado, tente novamente.")
+        print("-" * 45)
+    opcao = input("Deseja realizar outra pesquisa? [S/N]: ")
+    while opcao.upper() != "S" and opcao.upper() != "N":
+        opcao = input("Valores incorretos, informe S para realizar outra pesquisa ou N para encerrar: ")
+    if opcao.upper() == "N":
         break
-input("Pressione qualquer tecla para encerrar...")
+
+print("-" * 30)
+print("Alunos cadastrados")
+print(alunos)
 print("-" * 45)
+input("Pressione qualquer tecla para encerrar...")
