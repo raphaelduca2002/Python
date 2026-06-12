@@ -9,7 +9,7 @@ vetor = []
 #     valor = int(input(f"{i}/20 Informe um valor: "))
 #     vetor.append(valor)
 
-for i in range(1, 21):
+for i in range(1, 21, 1):
     vetor.append(i)
 
 print(vetor)
