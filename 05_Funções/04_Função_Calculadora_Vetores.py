@@ -42,6 +42,10 @@ def menor_elemento(vetor):
     return menor_valor
 
 def ocorrencias_do_primeiro_elemento(vetor):
+     """
+    :param vetor: Contar as ocorrências do primeiro elemento no vetor.
+    :return: Número de vezes que o primeiro elemento se repete.
+    """
     if not vetor:
         return 0
     return vetor.count(vetor[0])
