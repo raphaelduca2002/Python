@@ -25,7 +25,7 @@ def programa_principal():
 
             novo_salario = aumento(salario)
 
-            print(f"Funcionário {i}: Salário Antigo R$ {salario:.2f} | Novo Salário R$ {novo_salario:.2f} aumento de 15%")
+            print(f"Funcionário {x}: Salário Antigo R$ {salario:.2f} | Novo Salário R$ {novo_salario:.2f} aumento de 15%")
 
 
 programa_principal()
