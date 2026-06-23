@@ -39,7 +39,7 @@ def calcular(v1: int, v2: int, operacao: str):
     elif operacao == '*':
         return v1 * v2
     elif operacao == '/':
-        if v2 == 0 or v1 == 0:
+        if v2 == 0:
             return "Erro: Divisão por zero!"
         return v1 / v2
     else:
