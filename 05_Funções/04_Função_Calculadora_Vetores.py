@@ -24,14 +24,22 @@ def maior_elemento(vetor):
     :param vetor: Buscar o maior elemento cadastrado no vetor.
     :return: Retorna o maior elemento.
     """
-    return max(vetor)
+    maior_valor = 0
+    for valor in vetor:
+        if valor > maior_valor:
+            maior_valor = valor
+    return maior_valor
 
 def menor_elemento(vetor):
     """
     :param vetor: Buscar o menor elemento cadastrado no vetor.
     :return: Retorna o menor elemento.
     """
-    return min(vetor)
+    menor_valor = vetor[0]
+    for valor in vetor:
+        if valor < menor_valor:
+            menor_valor = valor
+    return menor_valor
 
 def ocorrencias_do_primeiro_elemento(vetor):
     if not vetor:
